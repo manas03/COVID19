@@ -10248,3 +10248,13 @@ form .row:first-child .floating-label-form-group {
   margin-top: -24px;
   margin-bottom: -50px;
 }
+
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
