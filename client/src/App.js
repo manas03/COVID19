@@ -3,18 +3,20 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Navbar from "./components/layout/Navbar";
 import Landing from "./components/layout/Landing";
+import Footer from "./components/layout/Footer";
 
 import "./App.css";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Router>
+      <Router>
+        <div className="App">
           <Navbar />
           <Route exact path="/" component={Landing} />
-        </Router>
-      </div>
+          <Footer />
+        </div>
+      </Router>
     );
   }
 }

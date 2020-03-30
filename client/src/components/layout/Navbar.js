@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import "../../App.css";
 
 class Navbar extends Component {
   render() {
     return (
       <nav
-        className="navbar navbar-expand-sm bg-dark navbar-light fixed-top"
+        className="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top"
         id="mainNav"
       >
         <div className="container">
@@ -13,7 +14,7 @@ class Navbar extends Component {
             Start Bootstrap
           </Link>
           <button
-            className="navbar-toggler navbar-toggler-right"
+            className="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
             type="button"
             data-toggle="collapse"
             data-target="#navbarResponsive"
@@ -26,19 +27,28 @@ class Navbar extends Component {
           </button>
           <div className="collapse navbar-collapse" id="navbarResponsive">
             <ul className="navbar-nav ml-auto">
-              <li className="nav-item">
-                <Link className="nav-link js-scroll-trigger" to="#about">
-                  About
+              <li className="nav-item mx-0 mx-lg-1">
+                <Link
+                  className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                  to="#portfolio"
+                >
+                  Portfolio
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link js-scroll-trigger" to="#projects">
-                  Projects
+              <li className="nav-item mx-0 mx-lg-1">
+                <Link
+                  className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                  to="/register"
+                >
+                  Log In
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link js-scroll-trigger" to="#signup">
-                  Contact
+              <li className="nav-item mx-0 mx-lg-1">
+                <Link
+                  className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                  to="/login"
+                >
+                  Sign Up
                 </Link>
               </li>
             </ul>
