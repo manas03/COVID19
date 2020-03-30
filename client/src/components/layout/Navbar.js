@@ -4,13 +4,16 @@ import { Link } from "react-router-dom";
 class Navbar extends Component {
   render() {
     return (
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-        <div class="container">
-          <Link class="navbar-brand js-scroll-trigger" to="#page-top">
+      <nav
+        className="navbar navbar-expand-lg navbar-light fixed-top"
+        id="mainNav"
+      >
+        <div className="container">
+          <Link className="navbar-brand js-scroll-trigger" to="#page-top">
             Start Bootstrap
           </Link>
           <button
-            class="navbar-toggler navbar-toggler-right"
+            className="navbar-toggler navbar-toggler-right"
             type="button"
             data-toggle="collapse"
             data-target="#navbarResponsive"
@@ -19,22 +22,22 @@ class Navbar extends Component {
             aria-label="Toggle navigation"
           >
             Menu
-            <i class="fas fa-bars"></i>
+            <i className="fas fa-bars"></i>
           </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <Link class="nav-link js-scroll-trigger" to="#about">
+          <div className="collapse navbar-collapse" id="navbarResponsive">
+            <ul className="navbar-nav ml-auto">
+              <li className="nav-item">
+                <Link className="nav-link js-scroll-trigger" to="#about">
                   About
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link js-scroll-trigger" to="#projects">
+              <li className="nav-item">
+                <Link className="nav-link js-scroll-trigger" to="#projects">
                   Projects
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link js-scroll-trigger" to="#signup">
+              <li className="nav-item">
+                <Link className="nav-link js-scroll-trigger" to="#signup">
                   Contact
                 </Link>
               </li>
