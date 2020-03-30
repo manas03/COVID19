@@ -7,7 +7,7 @@ const users = require("./routes/api/users");
 
 const app = express();
 
-//body parser middleware                            ????
+//body parser middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
