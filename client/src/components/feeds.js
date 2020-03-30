@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import Scroll from "./layout/Scroll";
 
 const Feeds = () => {
   useEffect(() => {
@@ -10,22 +11,35 @@ const Feeds = () => {
   }, []);
 
   return (
-    <section className="twitter-timeline py-5 col-md-6">
-      <div className="twitter-embed py-5  justify-content-center">
-        <Link
-          className="twitter-timeline"
-          data-theme="dark"
-          data-tweet-limit="10"
-          data-chrome="nofooter noborders"
-          to="https://twitter.com/WHO?ref_src=twsrc%5Etfw"
-        >
-          Tweets by WHO
-        </Link>
+    <div className="twitter-timeline d-flex flex-row mx-5 px-5 py-5">
+      <div className="twitter-embed w-50 px-3 py-5">
+        <Scroll>
+          <Link
+            className="twitter-timeline"
+            data-theme="dark"
+            data-tweet-limit="10"
+            data-chrome="nofooter noborders"
+            to="https://twitter.com/WHO?ref_src=twsrc%5Etfw"
+          >
+            Tweets by WHO
+          </Link>
+        </Scroll>
       </div>
-    </section>
+      <div className="twitter-embed w-50 px-3 py-5">
+        <Scroll>
+          <Link
+            className="twitter-timeline"
+            data-theme="dark"
+            data-tweet-limit="10"
+            data-chrome="nofooter noborders"
+            to="https://twitter.com/mohfw_india?lang=en"
+          >
+            Tweets by mHRD
+          </Link>
+        </Scroll>
+      </div>
+    </div>
   );
 };
 
 export default Feeds;
-
-//  <a class="twitter-timeline" data-width="400" data-height="400" data-theme="dark" href="https://twitter.com/WHO?ref_src=twsrc%5Etfw">Tweets by WHO</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
