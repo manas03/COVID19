@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import SearchBox from "./SearchBox";
 import "../App.css";
+import CountryList from "./contrylist";
+import Scroll from "./layout/Scroll";
 
 class Data extends Component {
   constructor() {
@@ -25,15 +27,17 @@ class Data extends Component {
   };
 
   render() {
-    const { items } = this.state;
+    const { items ,searchField} = this.state;
 
-    const searchResult = this.state.items.filter(result => {
+    const searchResult = items.filter(result => {
       return result.country
         .toLowerCase()
-        .includes(this.state.searchField.toLowerCase());
+        .includes(searchField.toLowerCase());
     });
 
-    return (
+    return !items.length ? 
+    <h1>Loading...</h1>:
+    (
       <div className="py-5 px-5">
         <div className="py-5">
           <div>
@@ -41,7 +45,7 @@ class Data extends Component {
               className="px-2 py-2"
               searchChange={this.onSearchChange}
             />
-            <table className="table table-bordered table-hover">
+      {/*     <table className="table table-bordered table-hover">
               <tr className="thead-dark">
                 <th></th>
                 <th>Country</th>
@@ -70,7 +74,23 @@ class Data extends Component {
                   </tr>
                 ))}
               </tbody>
-            </table>
+                </table>*/}
+               
+              
+                <table className="table table-bordered table-hover">
+                <tr className="thead-dark">
+                <th style={{width:'20px'}}></th>
+                <th style={{width:'20%'}}>Country</th>
+                <th style={{width:'15%'}}>Cases</th>
+                <th style={{width:'15%'}}>Active Cases</th>
+                <th  style={{width:'15%'}}>Recoverd</th>
+                <th style={{width:'15%'}}>Death</th>
+                <th style={{width:'15%'}}>Cases Per Milllion</th>
+              </tr>
+              </table>
+                <CountryList items={searchResult}/>
+              
+                
           </div>
         </div>
       </div>

@@ -17,7 +17,7 @@ class Landing extends Component {
         <div className=" container d-flex h-100 align-items-center">
           <div className="mx-auto text-center">
             <h3 className="masthead-subheading font-weight-bold text-white mx-auto mt-2 mb-5">
-              This is a fully fledged Covid site
+              This is a fully fledged Covid site which will tell you the current news related to COVID19, updated data,tweeter feeds and will also tell you the current stock market 
             </h3>
             <Link to="/news" class="btn btn-primary js-scroll-trigger">
               Get Started
