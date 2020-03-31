@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import "./App.css";
-import {BrowserRouter as Router, Route,Switch} from 'react-router-dom'
-import jwt_decode from 'jwt-decode';
-import setAuthToken from './utils/setAuthToken';
-import { setCurrentUser, logoutUser } from './actions/authActions';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import jwt_decode from "jwt-decode";
+import setAuthToken from "./utils/setAuthToken";
+import { setCurrentUser, logoutUser } from "./actions/authActions";
 
-import { Provider } from 'react-redux';
-import store from './store';
-import PrivateRoute from './components/PrivateRoute'
+import { Provider } from "react-redux";
+import store from "./store";
+import PrivateRoute from "./components/PrivateRoute";
 
 import Footer from "./components/layout/Footer";
 import News from "./components/news";
@@ -18,6 +18,7 @@ import Feeds from "./components/feeds";
 import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
 import FAQ from "./components/faq";
+import About from "./components/About";
 import Stock from "./Stock";
 
 if (localStorage.jwtToken) {
@@ -55,12 +56,10 @@ class App extends Component {
               <Route exact path="/register" component={Register} />
               <Route exact path="/login" component={Login} />
               <Route exact path="/information" component={FAQ} />
-               <Switch>            
-                 <PrivateRoute exact path="/stock" component={Stock}/>
-               </Switch>
-
-
-      
+              <Route exact path="/about" component={About} />
+              <Switch>
+                <PrivateRoute exact path="/stock" component={Stock} />
+              </Switch>
 
               <Footer />
             </div>
