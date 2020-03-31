@@ -148,8 +148,8 @@ class Stock extends Component {
       <div className="App pb-3">
         <div className="jumbotron jumbotron-fluid bg-dark text-light">
           <div className="container">
-            <h3 className="display-4">COVIDER Stock Shower</h3>
-            <p className="lead">A simple stock market API app</p>
+            <h3 className="display-4">Covider Stock Shower(CSS)</h3>
+            <p className="lead">Real time data and analysis of stocks with the help of graphs</p>
             <div className="row">
               <div className="col input-group">
                 <input

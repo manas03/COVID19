@@ -11,7 +11,7 @@ class FAQ extends Component {
     return (
       <div className="my-5 py-5">
         <h4 className="px-3">FAQs</h4>
-        <ul style={{ listStyleType: "square" }} className="py-5">
+        <ul style={{ listStyleType: "square" }} className="py-3">
           <li className="py-1">
             <a href={guide} download>
               How to self quarantine
@@ -40,7 +40,7 @@ class FAQ extends Component {
           </li>
         </ul>
         <h4 className="px-3">Do's and Don'ts</h4>
-        <ul style={{ listStyleType: "square" }}>
+        <ul className='py-2' style={{ listStyleType: "square" }}>
           <li>
             <a href={PosterE} download>
               English
