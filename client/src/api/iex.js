@@ -1,5 +1,7 @@
 import axios from "axios";
-const key='sk_3bbb01fd7661492ea8419765d44d162a'
+const key='pk_c448b52123c444b2ba78f2652f918dc3'
+//sk_3bbb01fd7661492ea8419765d44d162a-old
+//pk_c448b52123c444b2ba78f2652f918dc3-new
 
 const api = axios.create({
   

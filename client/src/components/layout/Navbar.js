@@ -17,6 +17,9 @@ class Navbar extends Component {
 
     const authLinks = (
       <ul className="navbar-nav ml-auto">
+      
+      
+              
         <li className="nav-item">
           <a
             href="/"
@@ -27,12 +30,13 @@ class Navbar extends Component {
               className="rounded-circle"
               src={user.avatar}
               alt={user.name}
-              style={{ width: '25px', marginRight: '5px' }}
+              style={{ width: '25px', marginRight: '5px' ,paddingTop: '5px'}}
               title="You must have a Gravatar connected to your email to display an image"
             />{' '}
             Logout
           </a>
         </li>
+       
       </ul>
     );
     const guestLinks = (
@@ -61,8 +65,8 @@ class Navbar extends Component {
     return (
       <nav className="navbar navbar-expand-lg navbar-light bg-info fixed-top">
         <div className="container">
-          <Link className="navbar-brand" to="/">
-            Start Bootstrap
+          <Link className="navbar-brand font-weight-bold" to="/">
+            Home
           </Link>
           <button
             className="navbar-toggler"
@@ -78,22 +82,6 @@ class Navbar extends Component {
           <div className="collapse navbar-collapse" id="navbarResponsive">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item active  mx-0 mx-lg-1">
-                <Link
-                  className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                  to="/"
-                >
-                  Home
-                </Link>
-              </li>
-              <li className="nav-item active mx-0 mx-lg-1">
-                <Link
-                  className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                  to="/"
-                >
-                  About
-                </Link>
-              </li>
-              <li className="nav-item active mx-0 mx-lg-1">
                 <Link
                   className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                   to="/news"
@@ -115,6 +103,30 @@ class Navbar extends Component {
                   to="/feeds"
                 >
                   Feeds
+                </Link>
+              </li>
+              <li className="nav-item active mx-0 mx-lg-1">
+                <Link
+                  className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                  to="/about"
+                >
+                  About
+                </Link>
+              </li>
+              <li className="nav-item active mx-0 mx-lg-1">
+                <Link
+                  className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                  to="/information"
+                >
+                  More Information
+                </Link>
+              </li>
+              <li className="nav-item active mx-0 mx-lg-1">
+                <Link
+                  className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                  to="/stock"
+                >
+                  Stock
                 </Link>
               </li>
               
