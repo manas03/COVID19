@@ -16,6 +16,7 @@ import Landing from './components/layout/Landing'
 import Feeds from './components/feeds'
 import Register from './components/auth/Register';
 import Login from './components/auth/Login';
+import FAQ from "./components/faq";
 
 if (localStorage.jwtToken) {
   // Set auth token header auth
@@ -54,6 +55,8 @@ class App extends Component {
         <Route exact path='/feeds' component={Feeds}/>
         <Route exact path="/register" component={Register} />
               <Route exact path="/login" component={Login} />
+              <Route exact path="/information" component={FAQ} />
+              
 
       
 
