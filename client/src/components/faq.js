@@ -17,6 +17,10 @@ import React, { Component } from 'react'
             <a href="../dyn/pdf/SocialDistancing.pdf">
             Social Distancing</a>
             </li>
+            <li>
+            <a href="https://www.youtube.com/playlist?list=PL1a9DHjZmejE-Ep2PAu2OR8HBfLP0BLIk" >
+Management Videos </a>                
+</li>
             </ul>
         )
     }
