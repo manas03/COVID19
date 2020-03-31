@@ -37,10 +37,7 @@ class Data extends Component {
       <div className="py-5 px-5">
         <div className="py-5">
           <div>
-            <SearchBox
-              className="px-2 py-2"
-              searchChange={this.onSearchChange}
-            />
+            <SearchBox className="px-2" searchChange={this.onSearchChange} />
             <table className="table table-bordered table-hover">
               <tr className="thead-dark">
                 <th></th>
