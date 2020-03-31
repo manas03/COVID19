@@ -3,7 +3,7 @@ import React from "react";
 const NewsItem = ({ datetime, headline, source, url, summary }) => {
   return (
     <div>
-      <a href={url} target="_blank" rel="noopener">
+      <a href={url} target="_blank" rel="noopener noreferrer">
         {" "}
         <h3>{headline}</h3>{" "}
       </a>

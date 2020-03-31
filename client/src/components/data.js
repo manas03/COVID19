@@ -1,11 +1,13 @@
 import React, { Component } from "react";
+import SearchBox from "./SearchBox";
 import "../App.css";
 
 class Data extends Component {
   constructor() {
     super();
     this.state = {
-      items: []
+      items: [],
+      searchField: ""
     };
   }
   componentDidMount() {
@@ -18,20 +20,36 @@ class Data extends Component {
       });
   }
 
+  onSearchChange = event => {
+    this.setState({ searchField: event.target.value });
+  };
+
   render() {
     const { items } = this.state;
+
+    const searchResult = this.state.items.filter(result => {
+      return result.country
+        .toLowerCase()
+        .includes(this.state.searchField.toLowerCase());
+    });
+
     return (
       <div className="py-5 px-5">
         <div className="py-5">
           <div>
+            <SearchBox
+              className="px-2 py-2"
+              searchChange={this.onSearchChange}
+            />
             <table className="table table-bordered table-hover">
               <tr className="thead-dark">
                 <th></th>
                 <th>Country</th>
                 <th>Cases</th>
-                <th>ActiveCases</th>
+                <th>Active Cases</th>
                 <th>Recoverd</th>
                 <th>Death</th>
+                <th>Cases Per Milllion</th>
               </tr>
               <tbody>
                 {items.reverse().map(item => (
@@ -43,12 +61,12 @@ class Data extends Component {
                         style={{ width: "16px" }}
                       />
                     </td>
-
                     <th key={item.id}>{item.country}</th>
                     <td key={item.id}>{item.cases}</td>
                     <td key={item.id}>{item.active}</td>
                     <td key={item.id}>{item.recovered}</td>
                     <td key={item.id}>{item.deaths}</td>
+                    <td key={item.id}>{item.casesPerOneMillion}</td>
                   </tr>
                 ))}
               </tbody>
