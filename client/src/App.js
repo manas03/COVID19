@@ -17,6 +17,7 @@ import Feeds from './components/feeds'
 import Register from './components/auth/Register';
 import Login from './components/auth/Login';
 import FAQ from "./components/faq";
+import Stock from "./Stock";
 
 if (localStorage.jwtToken) {
   // Set auth token header auth
@@ -56,6 +57,7 @@ class App extends Component {
         <Route exact path="/register" component={Register} />
               <Route exact path="/login" component={Login} />
               <Route exact path="/information" component={FAQ} />
+              <Route exact path="/stock" component={Stock}/>
               
 
       
