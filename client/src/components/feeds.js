@@ -11,32 +11,34 @@ const Feeds = () => {
   }, []);
 
   return (
-    <div className="twitter-timeline d-flex flex-row mx-5 px-5 py-5">
-      <div className="twitter-embed vw-100 px-3 py-5">
-        <Scroll>
-          <Link
-            className="twitter-timeline"
-            data-theme="dark"
-            data-tweet-limit="10"
-            data-chrome="nofooter noborders"
-            to="https://twitter.com/WHO?ref_src=twsrc%5Etfw"
-          >
-            Tweets by WHO
-          </Link>
-        </Scroll>
-      </div>
-      <div className="twitter-embed vw-100 px-3 py-5">
-        <Scroll>
-          <Link
-            className="twitter-timeline"
-            data-theme="dark"
-            data-tweet-limit="10"
-            data-chrome="nofooter noborders"
-            to="https://twitter.com/mohfw_india?lang=en"
-          >
-            Tweets by mHRD
-          </Link>
-        </Scroll>
+    <div className="bg">
+      <div className="twitter-timeline d-flex flex-row mx-5 px-5 py-5">
+        <div className="twitter-embed vw-100 px-3 py-5">
+          <Scroll>
+            <Link
+              className="twitter-timeline"
+              data-theme="dark"
+              data-tweet-limit="10"
+              data-chrome="nofooter noborders"
+              to="https://twitter.com/WHO?ref_src=twsrc%5Etfw"
+            >
+              Tweets by WHO
+            </Link>
+          </Scroll>
+        </div>
+        <div className="twitter-embed vw-100 px-3 py-5">
+          <Scroll>
+            <Link
+              className="twitter-timeline"
+              data-theme="dark"
+              data-tweet-limit="10"
+              data-chrome="nofooter noborders"
+              to="https://twitter.com/mohfw_india?lang=en"
+            >
+              Tweets by mHRD
+            </Link>
+          </Scroll>
+        </div>
       </div>
     </div>
   );

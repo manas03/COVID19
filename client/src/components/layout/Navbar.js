@@ -110,17 +110,17 @@ class Navbar extends Component {
               <li className="nav-item active mx-0 mx-lg-1">
                 <Link
                   className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                  to="/about"
+                  to="/information"
                 >
-                  About
+                  Information
                 </Link>
               </li>
               <li className="nav-item active mx-0 mx-lg-1">
                 <Link
                   className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                  to="/information"
+                  to="/about"
                 >
-                  Information
+                  About
                 </Link>
               </li>
             </ul>

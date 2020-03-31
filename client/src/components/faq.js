@@ -9,32 +9,35 @@ import PosterH from "./pdf/Poster_Corona_Hin.pdf";
 class FAQ extends Component {
   render() {
     return (
-      <div className="my-5 py-5">
+      <div className="bg my-5 py-5">
         <h1>FAQ</h1>
         <ul style={{ listStyleType: "square" }} className="py-5">
           <li className="py-1">
-            <a href={guide} download>
+            <a href={guide} download style={{ color: "black" }}>
               How to self quarantine
             </a>
           </li>
           <li className="py-1">
-            <a href={masks} download>
+            <a href={masks} download style={{ color: "black" }}>
               Guidelines on Use of masks
             </a>
           </li>
 
           <li className="py-1">
-            <a href={Distancing} download>
+            <a href={Distancing} download style={{ color: "black" }}>
               Advisory on Social Distancing
             </a>
           </li>
           <li className="py-1">
-            <a href={Comic} download>
+            <a href={Comic} download style={{ color: "black" }}>
               Understanding COVID-19(for kids)
             </a>
           </li>
           <li>
-            <a href="https://www.youtube.com/playlist?list=PL1a9DHjZmejE-Ep2PAu2OR8HBfLP0BLIk">
+            <a
+              href="https://www.youtube.com/playlist?list=PL1a9DHjZmejE-Ep2PAu2OR8HBfLP0BLIk"
+              style={{ color: "black" }}
+            >
               Management Videos{" "}
             </a>
           </li>
@@ -42,16 +45,17 @@ class FAQ extends Component {
         <h4 className="px-3">Do's and Don'ts</h4>
         <ul style={{ listStyleType: "square" }}>
           <li>
-            <a href={PosterE} download>
+            <a href={PosterE} download style={{ color: "black" }}>
               English
             </a>
           </li>
           <li>
-            <a href={PosterH} download>
+            <a href={PosterH} download style={{ color: "black" }}>
               Hindi
             </a>
           </li>
         </ul>
+        <h1 className="text-center">-----</h1>
       </div>
     );
   }
