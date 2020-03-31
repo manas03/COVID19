@@ -25,7 +25,7 @@ class Landing extends Component {
             <h4 className="masthead-subheading font-weight-normal text-white mt-3 mb-5">
               Please login to enjoy the full user experience.
             </h4>
-            <Link to="/news" class="btn btn-primary js-scroll-trigger">
+            <Link to="/login" class="btn btn-primary js-scroll-trigger">
               Get Started
             </Link>
           </div>
