@@ -22,20 +22,37 @@ class News extends Component {
 
   render() {
     return (
-      <div className="py-5 px-5">
+      <div className=" justify-content-center mt-5 py-5">
         {this.state.articles.map((item, index) => {
           return (
-            <div className="container mt-100px py-5">
-              <div className="mt-50">
-                <h2 style={{ textAlign: "left" }}>{item.title}</h2>;
+            <div className="container py-3">
+              <div className="border rounded shadow overflow-auto">
+                <h2
+                  style={{
+                    textAlign: "left",
+                    padding: "5px"
+                  }}
+                >
+                  {item.title}
+                </h2>
                 <img
                   alt="article"
                   src={item.urlToImage}
-                  style={{ width: "30vw" }}
+                  style={{
+                    width: "400px",
+                    borderRadius: "15px",
+                    float: "right",
+                    padding: "0px 15px 15px 5px"
+                  }}
                 />
-                <p style={{color:"red"}}className="py-2 ">{item.description}</p>
-                
-                <a href={item.url}>Read More</a>
+                <p className="px-2 py-3">{item.description}</p>
+                <Link
+                  to={item.url}
+                  target="_blank"
+                  className="px-2 font-italic d-flex align-items-end"
+                >
+                  Read More
+                </Link>
               </div>
             </div>
           );

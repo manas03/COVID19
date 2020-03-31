@@ -3,24 +3,27 @@ import guide from './pdf/Guidelines.pdf'
 import masks from './pdf/masks.pdf'
 import Distancing from './pdf/SocialDistancing.pdf'
 import Comic from './pdf/kidscomicCovid19.pdf'
+import PosterE from './pdf/Poster_Corona_Eng.pdf'
+import PosterH from './pdf/Poster_Corona_Hin.pdf'
 
  class FAQ extends Component {
     render() {
         return (
             <div classname ='py-5'>
             <h1 >FAQ</h1>
-            <ul className='py-5'>
-            <li className="py-1">
-            <a href={masks} download>Use of masks</a>
-            </li>
+            <ul style={{listStyleType:'square'}} className='py-5'>
             <li className="py-1">
             <a href={guide} download>
-            Guidelines for Corona
+            How to self quarantine
             </a>
             </li>
+            <li className="py-1">
+            <a href={masks} download>Guidelines on Use of masks</a>
+            </li>
+            
             <li  className="py-1">
             <a href={Distancing} download>
-            Social Distancing</a>
+            Advisory on Social Distancing</a>
             </li>
             <li  className="py-1">
             <a href={Comic} download>
@@ -34,12 +37,12 @@ Management Videos </a>
 
             </ul>
             <h4 className='px-3'>Do's and Don'ts</h4>
-            <ul>
+            <ul style={{listStyleType:'square'}}>
             <li>
-            <a href={Comic} download>English</a>
+            <a href={PosterE} download>English</a>
             </li>
             <li>
-            <a href={Comic} download>Hindi</a>
+            <a href={PosterH} download>Hindi</a>
             </li>
             </ul>
 

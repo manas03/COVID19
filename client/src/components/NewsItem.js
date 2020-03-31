@@ -1,25 +1,20 @@
-import React from 'react'
+import React from "react";
 
-const NewsItem = ({
-  datetime,
-  headline,
-  source,
-  url,
-  summary
-}) => {
+const NewsItem = ({ datetime, headline, source, url, summary }) => {
   return (
     <div>
-      <a href={url} target="_blank"> <h3>{ headline }</h3> </a>
+      <a href={url} target="_blank" rel="noopener">
+        {" "}
+        <h3>{headline}</h3>{" "}
+      </a>
       <div>
-        Source: <em>{ source }</em>, { datetime }
+        Source: <em>{source}</em>, {datetime}
       </div>
       <div>
-        <p>
-          { summary }
-        </p>
+        <p>{summary}</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default NewsItem
+export default NewsItem;

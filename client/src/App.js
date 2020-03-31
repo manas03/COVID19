@@ -9,14 +9,14 @@ import { Provider } from 'react-redux';
 import store from './store';
 import PrivateRoute from './components/PrivateRoute'
 
-import Footer from './components/layout/Footer'
-import News from './components/news'
-import Data from './components/data'
+import Footer from "./components/layout/Footer";
+import News from "./components/news";
+import Data from "./components/data";
 import Navbar from "./components/layout/Navbar";
-import Landing from './components/layout/Landing'
-import Feeds from './components/feeds'
-import Register from './components/auth/Register';
-import Login from './components/auth/Login';
+import Landing from "./components/layout/Landing";
+import Feeds from "./components/feeds";
+import Register from "./components/auth/Register";
+import Login from "./components/auth/Login";
 import FAQ from "./components/faq";
 import Stock from "./Stock";
 
@@ -36,26 +36,23 @@ if (localStorage.jwtToken) {
     // TODO: Clear current Profile
 
     // Redirect to login
-    window.location.href = '/login';
+    window.location.href = "/login";
   }
 }
 
-
 class App extends Component {
-  
-
   render() {
     return (
       <Provider store={store}>
-      <Router>
-      <div>
-      <div className="App">
-         <Navbar/>
-         <Route exact path='/' component={Landing}/>
-        <Route exact path='/news' component={News}/>
-        <Route exact path='/data' component={Data}/>
-        <Route exact path='/feeds' component={Feeds}/>
-        <Route exact path="/register" component={Register} />
+        <Router>
+          <div>
+            <div className="App">
+              <Navbar />
+              <Route exact path="/" component={Landing} />
+              <Route exact path="/news" component={News} />
+              <Route exact path="/data" component={Data} />
+              <Route exact path="/feeds" component={Feeds} />
+              <Route exact path="/register" component={Register} />
               <Route exact path="/login" component={Login} />
               <Route exact path="/information" component={FAQ} />
                <Switch>            
@@ -65,12 +62,11 @@ class App extends Component {
 
       
 
-        <Footer/>
-      </div>
-      </div>
-      </Router>
+              <Footer />
+            </div>
+          </div>
+        </Router>
       </Provider>
-      
     );
   }
 }
