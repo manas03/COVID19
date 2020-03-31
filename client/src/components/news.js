@@ -34,7 +34,8 @@ class News extends Component {
                   style={{ width: "30vw" }}
                 />
                 <p style={{color:"red"}}className="py-2 ">{item.description}</p>
-                <Link to={item.url}>Read More</Link>
+                
+                <a href={item.url}>Read More</a>
               </div>
             </div>
           );
