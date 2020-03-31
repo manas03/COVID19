@@ -37,7 +37,10 @@ export default class About extends Component {
               <div className="p-3">
                 <h5>Rachit Singhal</h5>
                 <p>Btech (CS) student</p>
-                <a href="https://github.com/manas03" style={{ color: "cyan" }}>
+                <a
+                  href="https://github.com/rachitsmrh"
+                  style={{ color: "cyan" }}
+                >
                   Github Account
                 </a>
               </div>
@@ -47,10 +50,7 @@ export default class About extends Component {
               <div className="p-3">
                 <h5>Manas Sahai</h5>
                 <p>Btech (CS) student</p>
-                <a
-                  href="https://github.com/rachitsmrh"
-                  style={{ color: "cyan" }}
-                >
+                <a href="https://github.com/manas03" style={{ color: "cyan" }}>
                   Github Account
                 </a>
               </div>
