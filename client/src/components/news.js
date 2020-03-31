@@ -22,18 +22,18 @@ class News extends Component {
 
   render() {
     return (
-      <div className="mt-8">
+      <div className="py-5 px-5">
         {this.state.articles.map((item, index) => {
           return (
-            <div className="container mt-100px pa-5">
+            <div className="container mt-100px py-5">
               <div className="mt-50">
                 <h2 style={{ textAlign: "left" }}>{item.title}</h2>;
                 <img
                   alt="article"
                   src={item.urlToImage}
-                  style={{ width: "50vw" }}
+                  style={{ width: "30vw" }}
                 />
-                <p>{item.description}</p>
+                <p style={{color:"red"}}className="py-2 ">{item.description}</p>
                 <Link to={item.url}>Read More</Link>
               </div>
             </div>

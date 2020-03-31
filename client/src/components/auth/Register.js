@@ -59,7 +59,7 @@ class Register extends Component {
             <div className="col-md-8 m-auto">
               <h1 className="display-4 text-center">Sign Up</h1>
               <p className="lead text-center">
-                Create your DevConnector account
+                Create your COVIDER account
               </p>
               <form noValidate onSubmit={this.onSubmit}>
                 <div className="form-group">
@@ -126,7 +126,7 @@ class Register extends Component {
                     <div className="invalid-feedback">{errors.password2}</div>
                   )}
                 </div>
-                <input type="submit" className="btn btn-info btn-block mt-4" />
+                <input type="submit" placeholder="Sign Up" className="btn btn-info btn-block mt-4" />
               </form>
             </div>
           </div>
