@@ -16,12 +16,12 @@ const Country = ({ flag,id,country, cases,active,recovered,deaths,casesPerOneMil
                         style={{ width: "16px" }}
                       />
                     </td>
-                    <th style={{width:"20%"}} key={id}>{country}</th>
-                    <td style={{width:"15%"}} key={id}>{cases}</td>
-                    <td style={{width:"15%"}} key={id}>{active}</td>
-                    <td style={{width:"15%"}} key={id}>{recovered}</td>
-                    <td style={{width:"15%"}} key={id}>{deaths}</td>
-                    <td  style={{width:"15%"}} key={id}>{casesPerOneMillion}</td>
+                    <th style={{width:"20vw"}} key={id}>{country}</th>
+                    <td style={{width:"15vw"}} key={id}>{cases}</td>
+                    <td style={{width:"15vw"}} key={id}>{active}</td>
+                    <td style={{width:"15vw"}} key={id}>{recovered}</td>
+                    <td style={{width:"15vw"}} key={id}>{deaths}</td>
+                    <td  style={{width:"15vw"}} key={id}>{casesPerOneMillion}</td>
                   </tr>
                {/*} ))}*/}
               </tbody>

@@ -79,13 +79,13 @@ class Data extends Component {
               
                 <table className="table table-bordered table-hover">
                 <tr className="thead-dark">
-                <th style={{width:'20px'}}></th>
-                <th style={{width:'20%'}}>Country</th>
-                <th style={{width:'15%'}}>Cases</th>
-                <th style={{width:'15%'}}>Active Cases</th>
-                <th  style={{width:'15%'}}>Recoverd</th>
-                <th style={{width:'15%'}}>Death</th>
-                <th style={{width:'15%'}}>Cases Per Milllion</th>
+                <th style={{width:'3vw'}}></th>
+                <th style={{width:'20vw'}}>Country</th>
+                <th style={{width:'15vw'}}>Cases</th>
+                <th style={{width:'15vw'}}>Active Cases</th>
+                <th  style={{width:'15vw'}}>Recoverd</th>
+                <th style={{width:'15vw'}}>Death</th>
+                <th style={{width:'15vw'}}>Cases Per Milllion</th>
               </tr>
               </table>
                 <CountryList items={searchResult}/>
