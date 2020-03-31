@@ -30,9 +30,9 @@ npm run server
 npm start
 ```
 
-###Authors
-* Rachit Singhal
-* Manas Sahai
-* Vipul Baghel
+### Authors
+* [**Rachit Singhal**](https://github.com/rachitsmrh)
+* [**Manas Sahai**](https://github.com/manas03)
+* [**Vipul Baghel**](https://github.com/V-gpu)
 See also the list of [contributors](https://github.com/rachitsmrh/COVID19/graphs/contributors) who participated in this project.
 
