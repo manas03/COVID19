@@ -34,13 +34,13 @@ class Stock extends Component {
 
   loadQuote = () => {
     const { enteredSymbol } = this.state;
-    const key='sk_3bbb01fd7661492ea8419765d44d162a'
+    const key = "sk_3bbb01fd7661492ea8419765d44d162a";
 
     Promise.all([
       loadQuotesForStock(enteredSymbol),
       loadLogoForStock(enteredSymbol),
       loadRecentNewsForStock(enteredSymbol),
-      loadChartForStock(enteredSymbol,"6m")
+      loadChartForStock(enteredSymbol, "6m")
     ])
       .then(values => {
         const [quote, logo, news, chart] = values;
@@ -148,7 +148,7 @@ class Stock extends Component {
       <div className="App pb-3">
         <div className="jumbotron jumbotron-fluid bg-dark text-light">
           <div className="container">
-            <h1 className="display-3">COVIDER Stock Shower</h1>
+            <h3 className="display-4">COVIDER Stock Shower</h3>
             <p className="lead">A simple stock market API app</p>
             <div className="row">
               <div className="col input-group">
@@ -167,7 +167,7 @@ class Stock extends Component {
                     type="button"
                     onClick={this.loadQuote}
                   >
-                    Load Quote
+                    Load Stock
                   </button>
                 </span>
               </div>
@@ -191,7 +191,7 @@ class Stock extends Component {
 
           <div className="row mt-3">
             <div className="col">
-              <h2>Latest Quote</h2>
+              <h2>Latest Stock</h2>
               {!!quote ? <StockInfo {...quote} /> : <p>Loading...</p>}
 
               <div className="mt-3">
@@ -200,15 +200,15 @@ class Stock extends Component {
                   onClick={this.onClickShowHistory}
                 >
                   {showHistory
-                    ? "Hide Previous Quotes"
-                    : "Show Previous Quotes"}
+                    ? "Hide Previous Stocks"
+                    : "Show Previous Stocks"}
                 </button>
               </div>
 
               <div className="mt-3">
                 {showHistory && !!quoteHistory && (
                   <div>
-                    <h2 className="text-center">Previous Quotes</h2>
+                    <h2 className="text-center">Previous Stocks</h2>
                     {quoteHistoryReverse.map((quoteHistoryItem, index) => {
                       return (
                         <div key={"quote" + index}>
@@ -230,7 +230,7 @@ class Stock extends Component {
                   </div>
                 )}
                 <button
-                  className="btn btn-dark btn-block"
+                  className="btn mb-5 btn-dark btn-block"
                   onClick={this.onClickShowAllNews}
                 >
                   {showAllNews ? "Show Less" : "Show All"}

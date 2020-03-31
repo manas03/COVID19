@@ -12,7 +12,7 @@ const Feeds = () => {
 
   return (
     <div className="twitter-timeline d-flex flex-row mx-5 px-5 py-5">
-      <div className="twitter-embed w-50 px-3 py-5">
+      <div className="twitter-embed vw-100 px-3 py-5">
         <Scroll>
           <Link
             className="twitter-timeline"
@@ -25,7 +25,7 @@ const Feeds = () => {
           </Link>
         </Scroll>
       </div>
-      <div className="twitter-embed w-50 px-3 py-5">
+      <div className="twitter-embed vw-100 px-3 py-5">
         <Scroll>
           <Link
             className="twitter-timeline"
