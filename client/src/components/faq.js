@@ -9,7 +9,7 @@ import PosterH from "./pdf/Poster_Corona_Hin.pdf";
 class FAQ extends Component {
   render() {
     return (
-      <div classname="py-5">
+      <div className="my-5 py-5">
         <h1>FAQ</h1>
         <ul style={{ listStyleType: "square" }} className="py-5">
           <li className="py-1">

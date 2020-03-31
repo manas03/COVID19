@@ -46,13 +46,13 @@ class News extends Component {
                   }}
                 />
                 <p className="px-2 py-3">{item.description}</p>
-                <Link
-                  to={item.url}
+                <a
+                  href={item.url}
                   target="_blank"
                   className="px-2 font-italic d-flex align-items-end"
                 >
                   Read More
-                </Link>
+                </a>
               </div>
             </div>
           );
