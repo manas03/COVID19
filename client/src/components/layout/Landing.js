@@ -8,7 +8,7 @@ import "../../App.css";
 class Landing extends Component {
   componentDidMount() {
     if (this.props.auth.isAuthenticated) {
-      this.props.history.push('/news');
+      this.props.history.push('/');
     }
   }
   render() {

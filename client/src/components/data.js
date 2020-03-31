@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import SearchBox from "./SearchBox";
 import "../App.css";
 import CountryList from "./contrylist";
-import Scroll from "./layout/Scroll";
+
 
 class Data extends Component {
   constructor() {

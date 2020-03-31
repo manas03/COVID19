@@ -10,7 +10,7 @@ class FAQ extends Component {
   render() {
     return (
       <div className="my-5 py-5">
-        <h1>FAQ</h1>
+        <h4 className="px-3">FAQs</h4>
         <ul style={{ listStyleType: "square" }} className="py-5">
           <li className="py-1">
             <a href={guide} download>
@@ -34,7 +34,7 @@ class FAQ extends Component {
             </a>
           </li>
           <li>
-            <a href="https://www.youtube.com/playlist?list=PL1a9DHjZmejE-Ep2PAu2OR8HBfLP0BLIk">
+            <a href="https://www.youtube.com/playlist?list=PL1a9DHjZmejE-Ep2PAu2OR8HBfLP0BLIk" target='_blank'>
               Management Videos{" "}
             </a>
           </li>
